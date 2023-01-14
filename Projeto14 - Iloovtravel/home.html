@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto14 - Home</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <nav>
+                <img class="logo" src="logo01.png">
+                <ul>
+                    <li><a id="refresh" href="index.html">Home</a></li>
+                    <li><a href="https://instagram.com/iloovtravel?igshid=YmMyMTA2M2Y=">Instagram</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>  
+        <div>
+            <details>
+                <summary>Companhias Aéreas</summary>
+                <a  href="https://www.voeazul.com.br/br/pt/home.html">Azul</a>
+                <a  href="https://www.voegol.com.br/">Gol</a>
+                <a  href="https://www.latamairlines.com/br/pt">Latam</a>
+                <a  href="https://www.flytap.com/">TAP</a>
+            </details>
+            
+            
+        </div>
+        
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img class="flip-imagem" src="flip-card-image02.png" style="width: 300px; height: 300px;">
+                </div>
+                <div class="flip-card-back">
+                    <h1>Segurança e Comprometimento</h1>
+                    <p>Aqui você encontrará preços acessíveis para sua viajem dos sonhos!</p>
+                    <img class="img-01" src="aviao01.png">
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="container">
+            <form>
+                <input type="text" id="textname" placeholder="Name" required>
+                <input type="text" id="textemail" placeholder="Email" required>
+                <input type="text" id="txt1" placeholder="Qual local deseja ir? / which place do you want to go?">
+                <input type="button" id="btn" value="Search" onclick="resultado()">
+                <textarea id="res"></textarea>
+                <input type="button" id="rfh" value="Submit" onclick="refresh()">
+            </form>
+        </div>
+
+        
+        
+
+    
+
+    </main>
+
+    
+
+    <footer>
+        <img class="logo-footer" src="bg.jpg">
+    </footer>
+    
+
+
+
+    <script src="main14.js"></script>
+</body>
+
+
+</html>

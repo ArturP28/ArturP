@@ -1,0 +1,277 @@
+header {
+    display: flex;
+}
+
+body {
+    background: rgb(8, 205, 231);
+}
+
+
+ul li {
+    display: inline-block;
+    position: relative;
+    left: 60%;
+    bottom: 2em;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    margin: 1em;
+    font-size: 20px;
+}
+
+.logo {
+    width: 10%;
+    position: relative;
+    left: 3em;
+    top: 0.5em;
+}
+
+.menu {
+    background-color: rgb(44, 7, 103);
+    width: 100%;
+}
+
+
+.img-01 {
+    position: relative;
+    width: 40%;
+    left: 400px;
+    top: 30px;
+    animation: float 3s ease infinite;
+
+}
+
+@keyframes float {
+    0%,
+    100% {  
+        transform: translateY(0px);
+    }
+
+     50% {
+        transform: translateY(75px);
+    }
+
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    padding: 1em;
+    margin-left: 1em;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 2s;
+    transform-style: preserve-3d;
+    
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    border-radius: 16px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background: rgb(8, 205, 231);
+    color: #000;
+
+}
+
+.flip-card-back {
+    background-color: #092753;
+    color: rgb(174, 192, 9);
+    transform: rotateY(180deg);
+}
+
+.flip-imagem {
+    animation: rotate 3s ease infinite;
+}
+
+h1, p {
+    font-family: sans-serif;
+    font-size: 20px;
+    padding: 1em;
+    color: #fff;
+    line-height: 1.5;
+}
+
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+
+    50% {
+        transform: rotate(65deg);
+    }
+}
+
+details {
+    display: flex;
+    margin: 3rem;
+    border: 2px solid #000;
+    box-shadow: 5px 5px 5px rgb(44, 7, 103);
+    width: 15%;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 1em;
+    margin-top: 50px;
+}
+
+summary {
+    text-align: center;
+    
+}
+
+details a {
+    border: 1px solid #000;
+    background-color: rgb(44, 7, 103);
+    border-radius: 5px;
+    text-align: center;
+    width: 30%;
+    margin: 20px;
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+}
+
+
+
+.container {
+  display: grid;
+  margin: 0;
+}
+
+
+input,#res {
+  margin: 20px;
+  display: grid;
+  position: relative;
+  left: 100vh;
+}
+
+#txt1, #res, #textname, #textemail {
+    display: flex;
+    width: 400px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #000;
+    border: inherit;
+    padding: 10px;
+}
+
+#res {
+  height: 100px;
+}
+
+#btn, #rfh, #btn2 {
+  width: 100px;
+  display: flex;
+  width: 100;
+  text-align: center;
+  justify-content: center;
+  border-radius: 5px;
+  border-style: inherit;
+}
+
+
+
+footer {
+    background: url(bg.jpg);
+}
+
+
+
+
+@media screen and (max-width: 1000px) {
+    * {
+        width: auto;
+        margin: 0 auto;
+    }
+    
+    header {
+        width: 100%;
+        
+    }
+
+    #txt1, #res, #textname, #textemail {
+        width: auto;
+    }
+
+    ul li a {
+        display: inline-block;
+        position: relative;
+        right: 50px;
+        margin: 0;
+
+    }
+
+    ul li {
+        margin: 10px;
+    }
+
+    .img-01 {
+        width: 30%;
+        position: relative;
+        left: 100px;
+        top: -15px;
+        
+    }
+
+    details {
+        font-size: 15px;
+        width: 40%;
+        margin-top: 50px;
+    }
+
+
+    .container {
+        margin: 0;
+        position: relative;
+        left: -750px;
+
+    }
+
+    input {
+        display: grid;
+        position: relative;
+        width: auto;
+        border-radius: 10px;
+        border-style: inherit;
+        padding: 5px;
+        cursor: pointer;
+    
+    }
+
+    .logo {
+        width: 30%;
+        top: 1em;
+    }
+
+    .paises:hover :not(:hover){
+        opacity: 0.3;
+    }
+    
+    #img:hover {
+        scale: 1.1;
+    }
+      
+}
+
+
