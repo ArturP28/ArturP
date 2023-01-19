@@ -1,0 +1,59 @@
+
+
+.div01 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+form {
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 8px 8px 8px 8px #000;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    box-shadow: 3px 3px 3px 3px  rgb(84, 9, 204);
+    height: 2em;
+    width: 200px;
+    margin: 20px;
+    font-size: 25px;
+    text-align: center;
+}
+
+#result, #result2, #result3 {
+    padding: 3em;
+    padding: 1em;
+    font-size: 25px;
+    color: rgb(231, 7, 7);
+}
+
+#btn {
+    transform: scale(1.0);
+}
+
+#btn:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 1000px) {
+    form {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}
