@@ -1,0 +1,39 @@
+
+.sec00 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100vh;
+    width: 100vw;
+}
+h1 {
+    font-size: 40px;
+    background: linear-gradient(to right, #72f111, #e80808, #cde20a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+button {
+    margin: 10px;
+}
+
+input {
+    margin: 40px;
+}
+
+#listatarefas {
+    font-size: 25px;
+}
+
+#novoitem {
+    padding: 1em;
+    border: inherit;
+    box-shadow: 5px 5px 5px #72f111;
+}
+
+button {
+    border-color: #72f111;
+    border-radius: 50px;
+}
