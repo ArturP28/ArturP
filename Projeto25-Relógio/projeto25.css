@@ -1,0 +1,25 @@
+* {
+    background-color: #000;
+}
+
+
+#relogio {
+    display: grid;
+    place-content: center;
+    color: #fff;
+    height: 100vh;
+    font-size: 100px;
+    animation: beat 1.5s infinite alternate;
+}
+
+@keyframes beat {
+    100% {
+        transform: scale(1.4);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #relogio {
+        font-size: 50px;
+    }
+}
