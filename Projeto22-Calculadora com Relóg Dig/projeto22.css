@@ -1,0 +1,45 @@
+body {
+    background-color: #000;
+}
+
+
+.div00,.div01 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    
+}
+
+.div01 {
+    border: 2px solid #440a85;
+    box-shadow: 5px -5px #440a85;
+    height: 400px;
+    padding: 1em;
+}
+
+#visor {
+    background-color: #989191;
+    margin: 10px;
+    font-size: 25px;
+}
+
+button {
+    margin: 10px;
+    background-color: #440a85;
+    color: #fff;
+    padding: 0.5em;
+    width: 50px;
+}
+
+#visor {
+    padding: 10px;
+}
+
+#relogio {
+    color: #fff;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+}
