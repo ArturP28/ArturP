@@ -1,0 +1,133 @@
+.div00 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    background: #d0b9b9;
+
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.data-hora {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+}
+
+#relogio {
+    padding: 1em;
+}
+
+.cabecario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5em;
+}
+
+input {
+    margin: 10px;
+}
+
+.img-carro {
+    animation: float 15s ease infinite;
+}
+
+@keyframes float {
+    0%,
+    100% {
+        transform: translateX(50px);
+    }
+
+    50% {
+        transform: translateX(1200px);
+    }
+}
+
+.div01 {
+    padding: 1em;
+}
+
+ul li {
+    font-size: 25px;
+    padding: 1em;
+}
+
+p {
+    padding: 1em;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+    
+}
+
+#result, #result2, #result3 {
+    padding: 1em;
+}
+
+.check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@media screen and (max-width: 1000px) {
+    .div00 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 10px;
+    }
+
+    .img-carro {
+        animation: float 3s ease infinite;
+    }
+    
+    @keyframes float {
+        0%,
+        100% {
+            transform: translateX(50px);
+        }
+    
+        50% {
+            transform: translateX(200px);
+        }
+    }
+}
+
+/* div da respota */
+
+#result01, #result02, #result03, #result04, #result05 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.respotas {
+    padding: 5em;
+}
+
+.link-topo {
+    cursor: pointer;
+    padding: 2em;
+    text-decoration: none;
+    color: #000;
+}
+

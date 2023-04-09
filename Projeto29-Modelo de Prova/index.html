@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto 29</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="projeto29.css">
+</head>
+<body>
+    <header>
+        <div class="div00">
+            <div class="data-hora">
+                <div id="relogio"></div>
+                <div id="data"></div>
+            </div>    
+            <h1>Legislação de Trânsito</h1>
+            <img src="pista.png">
+
+        </div>
+        <div class="carro">
+            <img class="img-carro" src="img-carro.png">
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <div class="cabecario">
+            <input id="name" type="text" placeholder="Nome">
+            <input id="idade" type="text" placeholder="Idade">
+            <input id="cidade" type="text" placeholder="Cidade">
+            <button class="btn-cabecario" onclick="conferir()">Conferir</button>
+            <div id="result"></div>
+            <div id="result2"></div>
+            <div id="result3"></div>
+
+        </div>
+
+        <div class="div01">
+            <ul>
+                <li>Qual é a multa por dirigir sob a influência de álcool ou drogas?</li>
+                <p>Assinale a alternativa correta:</p>
+
+                <p> Letra A: R$ 1.500,00 e suspensão da CNH por 12 meses </p> 
+                <input id="check1A" class="check" type="checkbox">
+
+                <p>Letra B: R$ 2.500,00 e suspensão da CNH por 24 meses </p> 
+                <input id="check1B" class="check" type="checkbox">
+
+                <p>Letra C: R$ 5.000,00 e suspensão da CNH por 36 meses </p> 
+                <input id="check1C" class="check" type="checkbox">
+
+                <p>Letra D: R$ 7.500,00 e suspensão da CNH por 48 meses </p> 
+                <input id="check1D" class="check" type="checkbox">
+                
+            </ul>
+
+            <button id="btn" onclick="result01()">Enviar</button>
+            
+        </div>
+
+        <div class="div01">
+            <ul>
+                <li>Qual é a velocidade máxima permitida em vias urbanas com sinalização de velocidade máxima de 60 km/h?</li>
+                <p>Assinale a alternativa correta:</p>
+
+                <p>Letra A: 90 km/h </p> 
+                <input id="check2A" type="checkbox">
+
+                <p>Letra B: 80 km/h </p> 
+                <input id="check2B" type="checkbox">
+
+                <p>Letra C: 70 km/h </p> 
+                <input id="check2C" type="checkbox">
+
+                <p>Letra D: 100 km/h </p> 
+                <input id="check2D" type="checkbox">
+                
+            </ul>
+
+            <button id="btn" onclick="result02()">Enviar</button>
+
+        </div>
+
+        <div class="div01">
+            <ul>
+                <li>Qual é a punição prevista para o condutor que ultrapassar outro veículo em local proibido pela sinalização?</li>
+                <p>Assinale a alternativa correta:</p>
+                <p>Letra A: Multa gravíssima e suspensão da CNH </p> 
+                <input id="check3A" type="checkbox">
+
+                <p>Letra B: Multa grave e apreensão do veículo </p> 
+                <input id="check3B" type="checkbox">
+
+                <p>Letra C: Multa média e retenção do veículo </p> 
+                <input id="check3C" type="checkbox">
+
+                <p>Letra D: Multa leve e advertência por escrito </p> 
+                <input id="check3C" type="checkbox">
+                
+            </ul>
+
+            <button id="btn" onclick="result03()">Enviar</button>
+
+        </div>
+
+        <div class="div01">
+            <ul>
+                <li>Qual é a penalidade prevista para o condutor que for flagrado dirigindo sem o cinto de segurança?</li>
+                <p>Assinale a alternativa correta:</p>
+                <p>Letra A: Multa e apreensão do veículo </p> 
+                <input id="check4A" type="checkbox">
+
+                <p>Letra B: Multa e retenção do veículo </p> 
+                <input id="check4B" type="checkbox">
+
+                <p>Letra C:  Multa e suspensão da CNH </p> 
+                <input id="check4C" type="checkbox">
+
+                <p>Letra D:  Multa e pontos na CNH </p> 
+                <input id="check4D" type="checkbox">
+                
+            </ul>
+
+            <button id="btn" onclick="result04()">Enviar</button>
+
+        </div>
+
+        <div class="div01">
+            <ul>
+                <li>Qual é a distância mínima que o motorista deve manter do veículo à sua frente em uma via de trânsito rápido?</li>
+                <p>Assinale a alternativa correta:</p>
+                <p>Letra A: 30 metros </p> 
+                <input id="check5A" type="checkbox">
+
+                <p>Letra B: 40 metros </p> 
+                <input id="check5B" type="checkbox">
+
+                <p>Letra C: 50 metros </p> 
+                <input id="check5C" type="checkbox">
+
+                <p>Letra D: 60 metros </p> 
+                <input id="check5D" type="checkbox">
+                
+            </ul>
+
+            <button id="btn" onclick="result05()">Enviar</button>
+
+        </div>
+        <div class="respotas">
+            <div id="result01"></div>
+            <div id="result02"></div>
+            <div id="result03"></div>
+            <div id="result04"></div>
+            <div id="result05"></div>
+        </div>
+
+        <div class="botao-topo">
+            <a class="link-topo" href="index.html">Resetar</a>
+        </div>
+
+    
+
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+    <script src="Main29.js"></script>
+</body>
+</html>
